@@ -7,8 +7,15 @@
 # - x=2; y=4-> 1
 # - x=-34; y=-30 -> 3
 
-x = int(input("x: "))
-y = int(input("y: "))
+check = False
+while not check:
+    x = int(input("x: "))
+    y = int(input("y: "))
+    if (x != 0 or y != 0):
+        check = True
+    else:
+        print('x or y should be <> 0, try again')
+
 if x > 0 and y > 0:
     print('1 четверть')
 elif x < 0 and y > 0:
